@@ -1,0 +1,5 @@
+D:\Projects\IM Music\PlaymySong\PlaymySong\bin\PlaymySong.dll
+D:\Projects\IM Music\PlaymySong\PlaymySong\bin\PlaymySong.pdb
+D:\Projects\IM Music\PlaymySong\PlaymySong\obj\Debug\PlaymySong.csprojResolveAssemblyReference.cache
+D:\Projects\IM Music\PlaymySong\PlaymySong\obj\Debug\PlaymySong.dll
+D:\Projects\IM Music\PlaymySong\PlaymySong\obj\Debug\PlaymySong.pdb
