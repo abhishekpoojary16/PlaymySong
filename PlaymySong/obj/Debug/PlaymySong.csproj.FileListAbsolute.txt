@@ -3,3 +3,8 @@ D:\Projects\IM Music\PlaymySong\PlaymySong\bin\PlaymySong.pdb
 D:\Projects\IM Music\PlaymySong\PlaymySong\obj\Debug\PlaymySong.csprojResolveAssemblyReference.cache
 D:\Projects\IM Music\PlaymySong\PlaymySong\obj\Debug\PlaymySong.dll
 D:\Projects\IM Music\PlaymySong\PlaymySong\obj\Debug\PlaymySong.pdb
+C:\Users\inpooa01\Documents\GitHub\PlaymySong\PlaymySong\bin\PlaymySong.dll
+C:\Users\inpooa01\Documents\GitHub\PlaymySong\PlaymySong\bin\PlaymySong.pdb
+C:\Users\inpooa01\Documents\GitHub\PlaymySong\PlaymySong\obj\Debug\PlaymySong.csprojResolveAssemblyReference.cache
+C:\Users\inpooa01\Documents\GitHub\PlaymySong\PlaymySong\obj\Debug\PlaymySong.dll
+C:\Users\inpooa01\Documents\GitHub\PlaymySong\PlaymySong\obj\Debug\PlaymySong.pdb

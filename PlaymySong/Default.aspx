@@ -55,7 +55,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cU5EMgrfI9s"></iframe>
+                            <iframe class="embed-responsive-item" src='<%#link_1 %>'>'></iframe>
                         </div>
 
                     </div>
@@ -63,6 +63,12 @@
                 </div>
                 <!-- /.container -->
             </section>
+
+            <asp:LinkButton id="btn_1" CssClass="btn btn-default btn-lg" runat="server" onclick="btnUpvote_Click">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%#upvotes_1%>
+                    </asp:LinkButton>
+            &nbsp;
+            <span class="badge badge-primary"><%#contributer_1 %></span> 
 
             <hr />
 
@@ -82,19 +88,19 @@
                 
                 <div class="col-md-6">
                     <div class="vid">
-                        <iframe src="//www.youtube.com/embed/jeo3an2M_Lo"></iframe>
+                        <iframe src='<%#link_2 %>'></iframe>
                     </div>
                     <!--./vid -->
                 </div>
 
                 <div class="col-md-1">
-                    <button type="button" class="btn btn-default btn-lg">
-                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 14 
-                    </button>          
+                    <asp:LinkButton id="btn_2" CssClass="btn btn-default btn-lg" runat="server" onclick="btnUpvote_Click">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%#upvotes_2%> 
+                    </asp:LinkButton>          
                 </div>
 
                 <div class="col-md-3">
-                    <span class="badge badge-primary">Abhishek</span>                    
+                    <span class="badge badge-primary"><%#contributer_2 %></span>                    
                 </div>
             </div>
             <!-- /.row -->
@@ -109,19 +115,19 @@
                 
                 <div class="col-md-6">
                     <div class="vid">
-                        <iframe src="//www.youtube.com/embed/ac7KhViaVqc"></iframe>
+                        <iframe src='<%#link_3 %>'></iframe>
                     </div>
                     <!--./vid -->
                 </div>
 
                 <div class="col-md-1">
-                    <button type="button" class="btn btn-default btn-lg">
-                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 14 
-                    </button>          
+                    <asp:LinkButton id="btn_3" CssClass="btn btn-default btn-lg" runat="server" onclick="btnUpvote_Click">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%#upvotes_3%>
+                    </asp:LinkButton>          
                 </div>
 
                 <div class="col-md-3">
-                    <span class="badge badge-primary">Abhishek</span>                    
+                    <span class="badge badge-primary"><%#contributer_3 %></span>                    
                 </div>
             </div>
             <!-- /.row -->
