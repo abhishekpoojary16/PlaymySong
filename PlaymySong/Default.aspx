@@ -50,6 +50,14 @@
             </div>
             <!-- /.row -->
 
+
+            <div class="input-group input-group-lg">
+  <input id="textbox1" type="text" class="form-control" placeholder="www.link-you-want-to-share.com" aria-describedby="sizing-addon1" runat="server"/>
+                <span class="input-group-btn">
+        <button class="btn btn-default" type="button" runat="server" onserverclick="btnInsert_Click">Go!</button>
+      </span>
+</div>
+
             <!-- About -->
             <section id="about" class="about">
                 <div class="container">

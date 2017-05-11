@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -31,16 +32,31 @@ namespace PlaymySong
             contributer.Clear();
             upvotes.Clear();
 
+            ReRank();
             GetData();
             SetData();
-            Page.DataBind();
+            Page.DataBind();            
+        }
+
+        protected void ReRank()
+        {
+            using (SqlConnection sqlcon = new SqlConnection(WebConfigurationManager.AppSettings["dbcon"]))
+            {
+                string commandtext = "spx_ReRank";
+                using (SqlCommand command = new SqlCommand(commandtext, sqlcon))
+                {
+                    sqlcon.Open();
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.ExecuteNonQuery();
+                }
+            }
         }
 
         protected void GetData()
         {
             using (SqlConnection sqlcon = new SqlConnection(WebConfigurationManager.AppSettings["dbcon"]))
             {
-                using (SqlCommand command = new SqlCommand("select Link, Contributer, Upvotes from Master order by Upvotes desc", sqlcon))
+                using (SqlCommand command = new SqlCommand("select Link, Contributer, Upvotes, Rank from Master order by Rank", sqlcon))
                 {
                     sqlcon.Open();
                     using (SqlDataReader dr = command.ExecuteReader())
@@ -74,6 +90,25 @@ namespace PlaymySong
            upvotes_3 = upvotes["upvotes_3"];
         }
 
+        protected void btnInsert_Click(object sender, EventArgs e)
+        {
+            string InputString = textbox1.Value;
+            string username = HttpContext.Current.User.Identity.Name.ToString().Replace("CORPORATE\\", "").ToLower();
+
+            using (SqlConnection sqlcon = new SqlConnection(WebConfigurationManager.AppSettings["dbcon"]))
+            {
+                string commandtext = "spx_InsertRecord";
+                using (SqlCommand command = new SqlCommand(commandtext, sqlcon))
+                {
+                    sqlcon.Open();
+                    command.Parameters.AddWithValue("@Link", InputString);
+                    command.Parameters.AddWithValue("@Contributer", username);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         protected void btnUpvote_Click(object sender, EventArgs e)
         {
             LinkButton button = (LinkButton)sender;
@@ -85,11 +120,12 @@ namespace PlaymySong
             {
                 string commandtext = "Update Master" +
                     " set Upvotes = Upvotes + 1" +
-                    "where id = " + btnId;
+                    //"where id = " + btnId;
+                    "where rank = " + btnId;
                 using (SqlCommand command = new SqlCommand(commandtext, sqlcon))
                 {
                     sqlcon.Open();
-                    command.ExecuteNonQuery();                 
+                    command.ExecuteNonQuery();   
                 }
             }
 

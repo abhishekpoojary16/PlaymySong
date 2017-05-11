@@ -22,6 +22,15 @@ namespace PlaymySong {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// textbox1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText textbox1;
+        
+        /// <summary>
         /// btn_1 control.
         /// </summary>
         /// <remarks>
