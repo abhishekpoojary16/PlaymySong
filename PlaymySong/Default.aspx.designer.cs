@@ -31,6 +31,15 @@ namespace PlaymySong {
         protected global::System.Web.UI.HtmlControls.HtmlInputText textbox1;
         
         /// <summary>
+        /// r1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl r1;
+        
+        /// <summary>
         /// btn_1 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace PlaymySong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btn_1;
+        
+        /// <summary>
+        /// r2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl r2;
         
         /// <summary>
         /// btn_2 control.
@@ -49,6 +67,15 @@ namespace PlaymySong {
         protected global::System.Web.UI.WebControls.LinkButton btn_2;
         
         /// <summary>
+        /// r3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl r3;
+        
+        /// <summary>
         /// btn_3 control.
         /// </summary>
         /// <remarks>
@@ -56,5 +83,59 @@ namespace PlaymySong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btn_3;
+        
+        /// <summary>
+        /// r4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl r4;
+        
+        /// <summary>
+        /// btn_4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btn_4;
+        
+        /// <summary>
+        /// r5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl r5;
+        
+        /// <summary>
+        /// btn_5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btn_5;
+        
+        /// <summary>
+        /// r6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl r6;
+        
+        /// <summary>
+        /// btn_6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btn_6;
     }
 }
